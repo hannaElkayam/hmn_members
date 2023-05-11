@@ -159,6 +159,7 @@ function CreateUser() {
             placeholder="dateOfRecovery"
             type = 'date'
           />
+          
         <Button onClick={handleAddVaccination}>Add Vaccination</Button>
         {vaccinations.map((vaccination, index) => (
           <div key={index}>
