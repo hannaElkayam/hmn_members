@@ -81,7 +81,7 @@ function CreateUser() {
             value={user.firstName}
             onChange={handleChange}
             style={{ marginBottom: "1rem" }}
-            placeholder="firstName"
+            placeholder="firstName*"
             required
           />
           <Form.Control
@@ -90,7 +90,7 @@ function CreateUser() {
             required
             value={user.lastName}
             style={{ marginBottom: "1rem" }}
-            placeholder="lastName"
+            placeholder="lastName*"
           />
              <Form.Control
             onChange={handleChange}
@@ -129,7 +129,7 @@ function CreateUser() {
             name="userDateOfBirth"
             value={user.userDateOfBirth}
             style={{ marginBottom: "1rem" }}
-            placeholder="userDateOfBirth"
+            placeholder="userDateOfBirth*"
             type='date'
             min="1923-01-01"
             max="2023-05-05"
@@ -148,7 +148,7 @@ function CreateUser() {
             name="userMobilePhone"           
             value={user.userMobilePhone}
             style={{ marginBottom: "1rem" }}
-            placeholder="userMobilePhone"
+            placeholder="userMobilePhone*"
           />
           <label>Date Of Onset Of Illness : </label>
           <Form.Control
