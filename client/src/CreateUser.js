@@ -49,7 +49,7 @@ function CreateUser() {
   
     if (!(/^\d{9}$/.test(user.userId)) ||
       !(/^0[1-9][0-9]{8}$/.test(user.userMobilePhone)) ||
-      !(/^0[1-9][0-9]{7}$/.test(user.userPhone))) 
+      ((user.userPhone.length>0)&& !(/^0[1-9][0-9]{7}$/.test(user.userPhone)))) 
     {
       setError(true);
       alert("One of the fields is incorrect");
@@ -141,7 +141,7 @@ function CreateUser() {
             value={user.userPhone}
             pattern="\d{9}"
             style={{ marginBottom: "1rem" }}
-            placeholder="userPhone"
+            placeholder="userPhone "
           />
           <Form.Control
             onChange={handleChange}
