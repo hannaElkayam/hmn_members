@@ -21,7 +21,7 @@ function Users() {
          {users.map((user) => (
       <div style={{ border: '1px solid black', padding: '5px' }} key={user._id}>
         <div>
-          <h6>Personal Details :</h6>
+          <h6>Personal Details:</h6>
           <p>Firs Name: {user.firstName}</p>
           <p>Last Name: {user.lastName}</p>
           <p>ID: {user.userId}</p>
