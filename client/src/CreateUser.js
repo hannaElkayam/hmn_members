@@ -97,7 +97,7 @@ function CreateUser() {
             name="userId"
             value={user.userId}
             style={{ marginBottom: "1rem" }}
-            placeholder="userId"
+            placeholder="userId*"
             required
           />
              <Form.Control
